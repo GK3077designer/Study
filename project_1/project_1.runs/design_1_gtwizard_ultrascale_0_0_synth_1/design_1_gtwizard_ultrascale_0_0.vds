@@ -1,0 +1,521 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Aug  3 05:50:42 2026
+# Process ID         : 4448
+# Current directory  : E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1
+# Command line       : vivado.exe -log design_1_gtwizard_ultrascale_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_gtwizard_ultrascale_0_0.tcl
+# Log file           : E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1/design_1_gtwizard_ultrascale_0_0.vds
+# Journal file       : E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1\vivado.jou
+# Running On         : DESKTOP-QFAH4LL
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz
+# CPU Frequency      : 1800 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8455 MB
+# Swap memory        : 9354 MB
+# Total Virtual      : 17810 MB
+# Available Virtual  : 685 MB
+#-----------------------------------------------------------
+source design_1_gtwizard_ultrascale_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 571.027 ; gain = 220.246
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Study/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/2025.2/Vivado/data/ip'.
+Command: synth_design -top design_1_gtwizard_ultrascale_0_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21524
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2031.273 ; gain = 217.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_gtwizard_ultrascale_0_0' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/synth/design_1_gtwizard_ultrascale_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_top' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v:58]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:82804]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS_GTE4' [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:83082]
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS_GTE4' (0#1) [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:83082]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_stimulus_raw' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_stimulus_raw.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_reset_synchronizer' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_reset_sync.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_reset_synchronizer' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_reset_sync.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_prbs_any' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_prbs_any.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_prbs_any' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_prbs_any.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_stimulus_raw' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_stimulus_raw.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_checking_raw' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_checking_raw.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_prbs_any__parameterized0' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_prbs_any.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_prbs_any__parameterized0' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_prbs_any.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_checking_raw' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_checking_raw.v:58]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v:368]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v:383]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_bit_synchronizer' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_bit_sync.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_bit_synchronizer' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_bit_sync.v:58]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_init' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_init.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_init' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_init.v:59]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_vio_0' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/synth/gtwizard_ultrascale_0_vio_0.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_vio_0' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/synth/gtwizard_ultrascale_0_vio_0.v:49]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_wrapper' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_wrapper.v:57]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_tx' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'BUFG_GT' [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2855]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG_GT' (0#1) [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2855]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_tx' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_rx' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_gtwiz_userclk_rx' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v:60]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_gtwizard_top' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_top.v:173]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_gtwizard_gthe4' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_gthe4.v:141]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_gthe4_common_wrapper' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe4_common_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_gthe4_common' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_7_gthe4_common.v:53]
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_COMMON' [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:55036]
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_COMMON' (0#1) [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:55036]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_gthe4_common' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_7_gthe4_common.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_gthe4_common_wrapper' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe4_common_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_0_gthe4_channel_wrapper' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe4_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_gthe4_channel' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_7_gthe4_channel.v:53]
+INFO: [Synth 8-6157] synthesizing module 'GTHE4_CHANNEL' [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:53844]
+INFO: [Synth 8-6155] done synthesizing module 'GTHE4_CHANNEL' (0#1) [D:/2025.2/Vivado/scripts/rt/data/unisim_comp.v:53844]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_gthe4_channel' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_7_gthe4_channel.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_gthe4_channel_wrapper' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe4_channel_wrapper.v:56]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_gthe4_delay_powergood' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gthe4_delay_powergood.v:53]
+INFO: [Synth 8-226] default block is never used [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gthe4_delay_powergood.v:136]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_gthe4_delay_powergood' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gthe4_delay_powergood.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_bit_synchronizer' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_bit_synchronizer' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_bit_sync.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_reset_synchronizer' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_reset_synchronizer' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_reset_sync.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:162]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_reset_inv_synchronizer' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_reset_inv_synchronizer' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_reset_inv_sync.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_reset.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_gtwiz_userdata_tx' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_gtwiz_userdata_tx' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_tx.v:53]
+INFO: [Synth 8-6157] synthesizing module 'gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx' [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/hdl/gtwizard_ultrascale_v1_7_gtwiz_userdata_rx.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_gtwizard_gthe4' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_gthe4.v:141]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_gtwizard_top' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_top.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_wrapper' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_wrapper.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'gtwizard_ultrascale_0_example_top' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_gtwizard_ultrascale_0_0' (0#1) [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/synth/design_1_gtwizard_ultrascale_0_0.v:53]
+WARNING: [Synth 8-3848] Net sl_iport0 in module/entity gtwizard_ultrascale_0_vio_0 does not have driver. [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/synth/gtwizard_ultrascale_0_vio_0.v:90]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'gtwizard_ultrascale_0_vio_0_inst'. This will prevent further optimization [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v:526]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst'. This will prevent further optimization [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/synth/design_1_gtwizard_ultrascale_0_0.v:84]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'example_init_inst'. This will prevent further optimization [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v:452]
+INFO: [Synth 8-7129] Port rxdata_in[127] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[126] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[125] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[124] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[123] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[122] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[121] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[120] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[119] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[118] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[117] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[116] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[115] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[114] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[113] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[112] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[111] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[110] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[109] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[108] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[107] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[106] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[105] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[104] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[103] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[102] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[101] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[100] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[99] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[98] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[97] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[96] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[95] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[94] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[93] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[92] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[91] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[90] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[89] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[88] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[87] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[86] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[85] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[84] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[83] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[82] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[81] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[80] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[79] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[78] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[77] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[76] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[75] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[74] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[73] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[72] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[71] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[70] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[69] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[68] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[67] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[66] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[65] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[64] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[63] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[62] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[61] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[60] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[59] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[58] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[57] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[56] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[55] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[54] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[53] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[52] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[51] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[50] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[49] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[48] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[47] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[46] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[45] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[44] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[43] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[42] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[41] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[40] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[39] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[38] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[37] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[36] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[35] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[34] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[33] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxdata_in[32] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxctrl0_in[15] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxctrl0_in[14] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxctrl0_in[13] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Synth 8-7129] Port rxctrl0_in[12] in module gtwizard_ultrascale_v1_7_22_gtwiz_userdata_rx is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:28 ; elapsed = 00:00:43 . Memory (MB): peak = 2191.898 ; gain = 377.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 2191.898 ; gain = 377.820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:43 . Memory (MB): peak = 2191.898 ; gain = 377.820
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 2191.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0.xdc] for cell 'inst/gtwizard_ultrascale_0_vio_0_inst'
+Finished Parsing XDC File [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0.xdc] for cell 'inst/gtwizard_ultrascale_0_vio_0_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst/example_wrapper_inst/gtwizard_ultrascale_0_inst/inst'
+Finished Parsing XDC File [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst/example_wrapper_inst/gtwizard_ultrascale_0_inst/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_example_top.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2281.398 ; gain = 0.449
+Finished Parsing XDC File [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_example_top.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_example_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_gtwizard_ultrascale_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2281.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.201 . Memory (MB): peak = 2281.398 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2281.398 ; gain = 467.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2281.398 ; gain = 467.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2281.398 ; gain = 467.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'sm_init_reg' in module 'gtwizard_ultrascale_0_example_init'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_rx_reg' in module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                ST_START |                               00 |                               00
+              ST_TX_WAIT |                               01 |                               01
+              ST_RX_WAIT |                               10 |                               10
+              ST_MONITOR |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_init_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_0_example_init'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_TX_BRANCH |                              000 |                              000
+         ST_RESET_TX_PLL |                              001 |                              001
+    ST_RESET_TX_DATAPATH |                              010 |                              010
+   ST_RESET_TX_WAIT_LOCK |                              011 |                              011
+ST_RESET_TX_WAIT_USERRDY |                              100 |                              100
+ST_RESET_TX_WAIT_RESETDONE |                              101 |                              101
+        ST_RESET_TX_IDLE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_tx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_RX_BRANCH |                              000 |                              000
+         ST_RESET_RX_PLL |                              001 |                              001
+    ST_RESET_RX_DATAPATH |                              010 |                              010
+   ST_RESET_RX_WAIT_LOCK |                              011 |                              011
+    ST_RESET_RX_WAIT_CDR |                              100 |                              100
+ST_RESET_RX_WAIT_USERRDY |                              101 |                              101
+ST_RESET_RX_WAIT_RESETDONE |                              110 |                              110
+        ST_RESET_RX_IDLE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+       ST_RESET_ALL_INIT |                              000 |                              000
+     ST_RESET_ALL_BRANCH |                              001 |                              001
+     ST_RESET_ALL_TX_PLL |                              010 |                              010
+ST_RESET_ALL_TX_PLL_WAIT |                              011 |                              011
+      ST_RESET_ALL_RX_DP |                              100 |                              100
+     ST_RESET_ALL_RX_PLL |                              101 |                              101
+    ST_RESET_ALL_RX_WAIT |                              110 |                              110
+                  iSTATE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_7_22_gtwiz_reset'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:02 ; elapsed = 00:01:21 . Memory (MB): peak = 2281.398 ; gain = 467.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
+	   3 Input      1 Bit         XORs := 32    
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               31 Bit    Registers := 2     
+	               16 Bit    Registers := 14    
+	               12 Bit    Registers := 5     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 8     
+	                1 Bit    Registers := 242   
++---Muxes : 
+	   3 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   5 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 8     
+	   7 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 21    
+	   4 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:28 . Memory (MB): peak = 2281.398 ; gain = 467.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:31 ; elapsed = 00:01:52 . Memory (MB): peak = 2925.219 ; gain = 1111.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:54 . Memory (MB): peak = 2954.828 ; gain = 1140.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:56 . Memory (MB): peak = 2966.148 ; gain = 1152.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:42 ; elapsed = 00:02:09 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:42 ; elapsed = 00:02:09 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:43 ; elapsed = 00:02:09 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:43 ; elapsed = 00:02:09 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:43 ; elapsed = 00:02:09 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:43 ; elapsed = 00:02:09 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     1|
+|2     |BUFG_GT       |     2|
+|3     |CARRY8        |     9|
+|4     |GTHE4_CHANNEL |     1|
+|5     |GTHE4_COMMON  |     1|
+|6     |IBUFDS_GTE4   |     1|
+|7     |LUT1          |    52|
+|8     |LUT2          |    92|
+|9     |LUT3          |   106|
+|10    |LUT4          |    68|
+|11    |LUT5          |    48|
+|12    |LUT6          |   139|
+|13    |FDCE          |    20|
+|14    |FDPE          |    60|
+|15    |FDRE          |   575|
+|16    |FDSE          |   136|
+|17    |IBUF          |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:43 ; elapsed = 00:02:10 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:48 . Memory (MB): peak = 3194.840 ; gain = 1291.262
+Synthesis Optimization Complete : Time (s): cpu = 00:01:44 ; elapsed = 00:02:14 . Memory (MB): peak = 3194.840 ; gain = 1380.762
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 3194.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gthe4_top.gtwizard_ultrascale_0_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[2].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC for BUFG_GT inst/example_wrapper_inst/gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/example_wrapper_inst/gtwizard_ultrascale_0_inst/inst/gen_gtwizard_gthe4_top.gtwizard_ultrascale_0_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[2].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1 for BUFG_GT inst/example_wrapper_inst/gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3194.840 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+
+Synth Design complete | Checksum: a6f471c3
+INFO: [Common 17-83] Releasing license: Synthesis
+208 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:06 ; elapsed = 00:03:07 . Memory (MB): peak = 3194.840 ; gain = 2564.113
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.454 . Memory (MB): peak = 3194.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1/design_1_gtwizard_ultrascale_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_gtwizard_ultrascale_0_0, cache-ID = d543098921a082c6
+INFO: [Coretcl 2-1174] Renamed 66 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3194.840 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/Study/project_1/project_1.runs/design_1_gtwizard_ultrascale_0_0_synth_1/design_1_gtwizard_ultrascale_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_gtwizard_ultrascale_0_0_utilization_synth.rpt -pb design_1_gtwizard_ultrascale_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  3 05:54:44 2026...
