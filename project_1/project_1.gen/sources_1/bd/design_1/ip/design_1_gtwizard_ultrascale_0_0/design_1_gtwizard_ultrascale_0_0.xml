@@ -17,11 +17,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 03 00:14:30 UTC 2026</spirit:value>
+            <spirit:value>Wed Aug 05 00:59:10 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a051c38</spirit:value>
+            <spirit:value>9:5e5454cf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -36,11 +36,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 03 00:14:30 UTC 2026</spirit:value>
+            <spirit:value>Wed Aug 05 00:59:10 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:499865df</spirit:value>
+            <spirit:value>9:88644b49</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -51,7 +51,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:499865df</spirit:value>
+            <spirit:value>9:88644b49</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -65,11 +65,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 03 00:24:43 UTC 2026</spirit:value>
+            <spirit:value>Wed Aug 05 01:04:24 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:499865df</spirit:value>
+            <spirit:value>9:88644b49</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -80,7 +80,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:499865df</spirit:value>
+            <spirit:value>9:88644b49</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -96,11 +96,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 03 00:14:30 UTC 2026</spirit:value>
+            <spirit:value>Wed Aug 05 00:59:10 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5a051c38</spirit:value>
+            <spirit:value>9:5e5454cf</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -116,11 +116,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Aug 03 00:14:30 UTC 2026</spirit:value>
+            <spirit:value>Wed Aug 05 00:59:10 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:499865df</spirit:value>
+            <spirit:value>9:88644b49</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -272,6 +272,40 @@
           </spirit:driver>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>dbg_tx_data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dbg_rx_data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
@@ -288,47 +322,48 @@
         <spirit:userFileType>CELL_NAME_gtwizard_ultrascale_0_vio_0_inst</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_bit_sync.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_bit_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_checking_raw.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_checking_raw.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_init.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_reset_sync.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_reset_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_stimulus_raw.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_stimulus_raw.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_wrapper_functions.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_wrapper_functions.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_wrapper.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_prbs_any.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_prbs_any.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -349,48 +384,48 @@
         <spirit:userFileType>CELL_NAME_gtwizard_ultrascale_0_vio_0_inst</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_bit_sync.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_bit_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_checking_raw.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_checking_raw.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_gtwiz_userclk_rx.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_gtwiz_userclk_tx.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_init.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_init.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_reset_sync.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_reset_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_stimulus_raw.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_stimulus_raw.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_wrapper_functions.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_wrapper_functions.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_wrapper.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_wrapper.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_prbs_any.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_prbs_any.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/f0fb/src/gtwizard_ultrascale_0_example_top.v</spirit:name>
+        <spirit:name>../../ipshared/51f7/src/gtwizard_ultrascale_0_example_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -458,12 +493,12 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>gtwizard_ultrascale_0_example_top_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="efde822f"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="43feb010"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="97b43689"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="558abf4c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="9f680461"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

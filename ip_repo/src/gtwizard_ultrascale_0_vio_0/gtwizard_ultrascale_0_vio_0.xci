@@ -2,9 +2,10 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "gtwizard_ultrascale_0_vio_0",
+    "cell_name": "gtwizard_ultrascale_0_vio_0_inst",
     "component_reference": "xilinx.com:ip:vio:3.0",
     "ip_revision": "27",
-    "gen_directory": "../../../../gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0_vio_0",
+    "gen_directory": "e:/study/project_1/project_1.tmp/gtwizard_ultrascale_0_example_top_v1_0_project/gtwizard_ultrascale_0_example_top_v1_0_project.gen/sources_1/ip/gtwizard_ultrascale_0_vio_0",
     "parameters": {
       "component_parameters": {
         "C_PROBE_OUT255_INIT_VAL": [ { "value": "0x0", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
@@ -1590,11 +1591,11 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "27" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../gtwizard_ultrascale_0_ex.gen/sources_1/ip/gtwizard_ultrascale_0_vio_0" } ],
+        "OUTPUTDIR": [ { "value": "e:/study/project_1/project_1.tmp/gtwizard_ultrascale_0_example_top_v1_0_project/gtwizard_ultrascale_0_example_top_v1_0_project.gen/sources_1/ip/gtwizard_ultrascale_0_vio_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2025.2" } ],
-        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
     "boundary": {
@@ -1638,5 +1639,5 @@
       }
     }
   },
-  "checksum": "8e486e19"
+  "checksum": "8e5832db"
 }

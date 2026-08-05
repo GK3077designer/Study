@@ -24,7 +24,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>ffc8b44a</spirit:value>
+            <spirit:value>c11a4a8a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -46,7 +46,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d2e54a88</spirit:value>
+            <spirit:value>727312b6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -227,6 +227,40 @@
           </spirit:driver>
         </spirit:wire>
       </spirit:port>
+      <spirit:port>
+        <spirit:name>dbg_tx_data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>dbg_rx_data_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
     </spirit:ports>
   </spirit:model>
   <spirit:fileSets>
@@ -303,7 +337,7 @@
       <spirit:file>
         <spirit:name>src/gtwizard_ultrascale_0_example_top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_99d779fe</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_7c20aeed</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -380,6 +414,7 @@
         <spirit:name>src/gtwizard_ultrascale_0_example_wrapper_functions.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
+        <spirit:isIncludeFile>true</spirit:isIncludeFile>
       </spirit:file>
       <spirit:file>
         <spirit:name>src/gtwizard_ultrascale_0_example_wrapper.v</spirit:name>
@@ -423,8 +458,8 @@
         <spirit:name>src/gtwizard_ultrascale_0_example_top_sim.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_testbench</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -454,13 +489,13 @@
       </xilinx:taxonomies>
       <xilinx:displayName>gtwizard_ultrascale_0_example_top_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-08-02T23:46:05Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-08-05T00:54:03Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="efde822f"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="43feb010"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="97b43689"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="558abf4c"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="9f680461"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>

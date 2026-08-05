@@ -12,4 +12,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_gt
 # IP: bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_zynq_ultra_ps_e_0_1 || ORIG_REF_NAME==design_1_zynq_ultra_ps_e_0_1} -quiet] -quiet
 
+# IP: bd/design_1/ip/design_1_ila_0_0/design_1_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_ila_0_0 || ORIG_REF_NAME==design_1_ila_0_0} -quiet] -quiet
+
 # XDC: e:/Study/project_1/project_1.gen/sources_1/bd/design_1/design_1_ooc.xdc

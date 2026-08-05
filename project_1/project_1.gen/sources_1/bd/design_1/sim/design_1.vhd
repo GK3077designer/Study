@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
---Date        : Mon Aug  3 05:44:30 2026
+--Date        : Wed Aug  5 06:29:10 2026
 --Host        : DESKTOP-QFAH4LL running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -24,7 +24,7 @@ entity design_1 is
     mgtrefclk0_x0y2_p_0 : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=4,numReposBlks=4,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_zynq_ultra_ps_e_cnt=2,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_zynq_ultra_ps_e_cnt=2,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -42,7 +42,9 @@ architecture STRUCTURE of design_1 is
     hb_gtwiz_reset_all_in : in STD_LOGIC;
     link_down_latched_reset_in : in STD_LOGIC;
     link_status_out : out STD_LOGIC;
-    link_down_latched_out : out STD_LOGIC
+    link_down_latched_out : out STD_LOGIC;
+    dbg_tx_data_out : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    dbg_rx_data_out : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component design_1_gtwizard_ultrascale_0_0;
   component design_1_zynq_ultra_ps_e_0_1 is
@@ -51,24 +53,49 @@ architecture STRUCTURE of design_1 is
     pl_clk0 : out STD_LOGIC
   );
   end component design_1_zynq_ultra_ps_e_0_1;
+  component design_1_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_ila_0_0;
+  signal gtwizard_ultrascale_0_dbg_rx_data_out : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal gtwizard_ultrascale_0_dbg_tx_data_out : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal ilconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
   signal ilvector_logic_0_Res : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal \^link_down_latched_out_0\ : STD_LOGIC;
+  signal \^link_status_out_0\ : STD_LOGIC;
   signal zynq_ultra_ps_e_0_pl_clk0 : STD_LOGIC;
   signal zynq_ultra_ps_e_0_pl_resetn0 : STD_LOGIC;
 begin
+  link_down_latched_out_0 <= \^link_down_latched_out_0\;
+  link_status_out_0 <= \^link_status_out_0\;
 gtwizard_ultrascale_0: component design_1_gtwizard_ultrascale_0_0
      port map (
       ch0_gthrxn_in => ch0_gthrxn_in_0,
       ch0_gthrxp_in => ch0_gthrxp_in_0,
       ch0_gthtxn_out => ch0_gthtxn_out_0,
       ch0_gthtxp_out => ch0_gthtxp_out_0,
+      dbg_rx_data_out(31 downto 0) => gtwizard_ultrascale_0_dbg_rx_data_out(31 downto 0),
+      dbg_tx_data_out(31 downto 0) => gtwizard_ultrascale_0_dbg_tx_data_out(31 downto 0),
       hb_gtwiz_reset_all_in => ilvector_logic_0_Res(0),
       hb_gtwiz_reset_clk_freerun_in => zynq_ultra_ps_e_0_pl_clk0,
-      link_down_latched_out => link_down_latched_out_0,
+      link_down_latched_out => \^link_down_latched_out_0\,
       link_down_latched_reset_in => ilconstant_0_dout(0),
-      link_status_out => link_status_out_0,
+      link_status_out => \^link_status_out_0\,
       mgtrefclk0_x0y2_n => mgtrefclk0_x0y2_n_0,
       mgtrefclk0_x0y2_p => mgtrefclk0_x0y2_p_0
+    );
+ila_0: component design_1_ila_0_0
+     port map (
+      clk => zynq_ultra_ps_e_0_pl_clk0,
+      probe0(31 downto 0) => gtwizard_ultrascale_0_dbg_tx_data_out(31 downto 0),
+      probe1(31 downto 0) => gtwizard_ultrascale_0_dbg_rx_data_out(31 downto 0),
+      probe2(0) => \^link_down_latched_out_0\,
+      probe3(0) => \^link_status_out_0\
     );
   ilconstant_0_dout <= B"0";
   ilvector_logic_0_Res <= not (0 to 0 => zynq_ultra_ps_e_0_pl_resetn0);

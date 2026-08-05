@@ -14,7 +14,8 @@
       "gtwizard_ultrascale_0": "",
       "zynq_ultra_ps_e_0": "",
       "ilvector_logic_0": "",
-      "ilconstant_0": ""
+      "ilconstant_0": "",
+      "ila_0": ""
     },
     "ports": {
       "mgtrefclk0_x0y2_p_0": {
@@ -45,7 +46,7 @@
     "components": {
       "gtwizard_ultrascale_0": {
         "vlnv": "xilinx.com:user:gtwizard_ultrascale_0_example_top:1.0",
-        "ip_revision": "3",
+        "ip_revision": "4",
         "xci_name": "design_1_gtwizard_ultrascale_0_0",
         "xci_path": "ip\\design_1_gtwizard_ultrascale_0_0\\design_1_gtwizard_ultrascale_0_0.xci",
         "inst_hier_path": "gtwizard_ultrascale_0",
@@ -1047,6 +1048,31 @@
             "value": "0"
           }
         }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "ip_revision": "19",
+        "xci_name": "design_1_ila_0_0",
+        "xci_path": "ip\\design_1_ila_0_0\\design_1_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_DATA_DEPTH": {
+            "value": "4096"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "4"
+          },
+          "C_PROBE0_WIDTH": {
+            "value": "32"
+          },
+          "C_PROBE1_WIDTH": {
+            "value": "32"
+          }
+        }
       }
     },
     "nets": {
@@ -1074,16 +1100,30 @@
           "ch0_gthtxp_out_0"
         ]
       },
+      "gtwizard_ultrascale_0_dbg_rx_data_out": {
+        "ports": [
+          "gtwizard_ultrascale_0/dbg_rx_data_out",
+          "ila_0/probe1"
+        ]
+      },
+      "gtwizard_ultrascale_0_dbg_tx_data_out": {
+        "ports": [
+          "gtwizard_ultrascale_0/dbg_tx_data_out",
+          "ila_0/probe0"
+        ]
+      },
       "gtwizard_ultrascale_0_link_down_latched_out": {
         "ports": [
           "gtwizard_ultrascale_0/link_down_latched_out",
-          "link_down_latched_out_0"
+          "link_down_latched_out_0",
+          "ila_0/probe2"
         ]
       },
       "gtwizard_ultrascale_0_link_status_out": {
         "ports": [
           "gtwizard_ultrascale_0/link_status_out",
-          "link_status_out_0"
+          "link_status_out_0",
+          "ila_0/probe3"
         ]
       },
       "ilconstant_0_dout": {
@@ -1113,7 +1153,8 @@
       "zynq_ultra_ps_e_0_pl_clk0": {
         "ports": [
           "zynq_ultra_ps_e_0/pl_clk0",
-          "gtwizard_ultrascale_0/hb_gtwiz_reset_clk_freerun_in"
+          "gtwizard_ultrascale_0/hb_gtwiz_reset_clk_freerun_in",
+          "ila_0/clk"
         ]
       },
       "zynq_ultra_ps_e_0_pl_resetn0": {

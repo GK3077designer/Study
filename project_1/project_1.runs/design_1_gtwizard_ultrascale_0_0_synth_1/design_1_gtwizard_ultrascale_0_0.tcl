@@ -57,6 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "design_1_gtwizard_ultrascale_0_0_synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
+set_msg_config -id {HDL-1065} -limit 10000
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu7ev-ffvc1156-2-e
@@ -67,6 +68,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir E:/Study/project_1/project_1.cache/wt [current_project]
 set_property parent.project_path E:/Study/project_1/project_1.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part xilinx.com:zcu106:part0:2.6 [current_project]
@@ -76,7 +78,7 @@ set_property ip_output_repo e:/Study/project_1/project_1.cache/ip [current_proje
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet e:/Study/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/design_1_gtwizard_ultrascale_0_0.xci
+read_ip -quiet E:/Study/project_1/project_1.srcs/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/design_1_gtwizard_ultrascale_0_0.xci
 set_property used_in_implementation false [get_files -all e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/src/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0.xdc]

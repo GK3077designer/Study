@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:gtwizard_ultrascale_0_example_top:1.0
-// IP Revision: 3
+// IP Revision: 4
 
 `timescale 1ns/1ps
 
@@ -65,7 +65,9 @@ module design_1_gtwizard_ultrascale_0_0 (
   hb_gtwiz_reset_all_in,
   link_down_latched_reset_in,
   link_status_out,
-  link_down_latched_out
+  link_down_latched_out,
+  dbg_tx_data_out,
+  dbg_rx_data_out
 );
 
 input wire mgtrefclk0_x0y2_p;
@@ -79,6 +81,8 @@ input wire hb_gtwiz_reset_all_in;
 input wire link_down_latched_reset_in;
 output wire link_status_out;
 output wire link_down_latched_out;
+output wire [31 : 0] dbg_tx_data_out;
+output wire [31 : 0] dbg_rx_data_out;
 
   gtwizard_ultrascale_0_example_top inst (
     .mgtrefclk0_x0y2_p(mgtrefclk0_x0y2_p),
@@ -91,6 +95,8 @@ output wire link_down_latched_out;
     .hb_gtwiz_reset_all_in(hb_gtwiz_reset_all_in),
     .link_down_latched_reset_in(link_down_latched_reset_in),
     .link_status_out(link_status_out),
-    .link_down_latched_out(link_down_latched_out)
+    .link_down_latched_out(link_down_latched_out),
+    .dbg_tx_data_out(dbg_tx_data_out),
+    .dbg_rx_data_out(dbg_rx_data_out)
   );
 endmodule

@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-// Date        : Mon Aug  3 05:54:41 2026
+// Date        : Wed Aug  5 06:34:21 2026
 // Host        : DESKTOP-QFAH4LL running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               e:/Study/project_1/project_1.gen/sources_1/bd/design_1/ip/design_1_gtwizard_ultrascale_0_0/design_1_gtwizard_ultrascale_0_0_stub.v
@@ -14,13 +14,13 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* CHECK_LICENSE_TYPE = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{}" *) (* CORE_GENERATION_INFO = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=gtwizard_ultrascale_0_example_top,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
+(* CHECK_LICENSE_TYPE = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{}" *) (* CORE_GENERATION_INFO = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=gtwizard_ultrascale_0_example_top,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) 
 (* IP_DEFINITION_SOURCE = "package_project" *) (* X_CORE_INFO = "gtwizard_ultrascale_0_example_top,Vivado 2025.2" *) 
 module design_1_gtwizard_ultrascale_0_0(mgtrefclk0_x0y2_p, mgtrefclk0_x0y2_n, 
   ch0_gthrxn_in, ch0_gthrxp_in, ch0_gthtxn_out, ch0_gthtxp_out, 
   hb_gtwiz_reset_clk_freerun_in, hb_gtwiz_reset_all_in, link_down_latched_reset_in, 
-  link_status_out, link_down_latched_out)
-/* synthesis syn_black_box black_box_pad_pin="mgtrefclk0_x0y2_p,mgtrefclk0_x0y2_n,ch0_gthrxn_in,ch0_gthrxp_in,ch0_gthtxn_out,ch0_gthtxp_out,hb_gtwiz_reset_all_in,link_down_latched_reset_in,link_status_out,link_down_latched_out" */
+  link_status_out, link_down_latched_out, dbg_tx_data_out, dbg_rx_data_out)
+/* synthesis syn_black_box black_box_pad_pin="mgtrefclk0_x0y2_p,mgtrefclk0_x0y2_n,ch0_gthrxn_in,ch0_gthrxp_in,ch0_gthtxn_out,ch0_gthtxp_out,hb_gtwiz_reset_all_in,link_down_latched_reset_in,link_status_out,link_down_latched_out,dbg_tx_data_out[31:0],dbg_rx_data_out[31:0]" */
 /* synthesis syn_force_seq_prim="hb_gtwiz_reset_clk_freerun_in" */;
   input mgtrefclk0_x0y2_p;
   input mgtrefclk0_x0y2_n;
@@ -33,4 +33,6 @@ module design_1_gtwizard_ultrascale_0_0(mgtrefclk0_x0y2_p, mgtrefclk0_x0y2_n,
   input link_down_latched_reset_in;
   output link_status_out;
   output link_down_latched_out;
+  output [31:0]dbg_tx_data_out;
+  output [31:0]dbg_rx_data_out;
 endmodule

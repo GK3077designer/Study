@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:user:gtwizard_ultrascale_0_example_top:1.0
-// IP Revision: 3
+// IP Revision: 4
 
 (* X_CORE_INFO = "gtwizard_ultrascale_0_example_top,Vivado 2025.2" *)
 (* CHECK_LICENSE_TYPE = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{}" *)
-(* CORE_GENERATION_INFO = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=gtwizard_ultrascale_0_example_top,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "design_1_gtwizard_ultrascale_0_0,gtwizard_ultrascale_0_example_top,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=gtwizard_ultrascale_0_example_top,x_ipVersion=1.0,x_ipCoreRevision=4,x_ipLanguage=VHDL,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module design_1_gtwizard_ultrascale_0_0 (
@@ -66,7 +66,9 @@ module design_1_gtwizard_ultrascale_0_0 (
   hb_gtwiz_reset_all_in,
   link_down_latched_reset_in,
   link_status_out,
-  link_down_latched_out
+  link_down_latched_out,
+  dbg_tx_data_out,
+  dbg_rx_data_out
 );
 
 input wire mgtrefclk0_x0y2_p;
@@ -80,6 +82,8 @@ input wire hb_gtwiz_reset_all_in;
 input wire link_down_latched_reset_in;
 output wire link_status_out;
 output wire link_down_latched_out;
+output wire [31 : 0] dbg_tx_data_out;
+output wire [31 : 0] dbg_rx_data_out;
 
   gtwizard_ultrascale_0_example_top inst (
     .mgtrefclk0_x0y2_p(mgtrefclk0_x0y2_p),
@@ -92,6 +96,8 @@ output wire link_down_latched_out;
     .hb_gtwiz_reset_all_in(hb_gtwiz_reset_all_in),
     .link_down_latched_reset_in(link_down_latched_reset_in),
     .link_status_out(link_status_out),
-    .link_down_latched_out(link_down_latched_out)
+    .link_down_latched_out(link_down_latched_out),
+    .dbg_tx_data_out(dbg_tx_data_out),
+    .dbg_rx_data_out(dbg_rx_data_out)
   );
 endmodule
